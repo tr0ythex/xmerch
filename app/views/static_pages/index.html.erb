@@ -1,0 +1,155 @@
+<!-- header -->
+<header>
+    <div class="wrapper">
+        <%= image_tag("logo.svg", :alt => "logo", :class => "logo") %>
+        <%= button_tag("Личный кабинет", type: "button", class: "login") %>
+        <div class="email"><a href="mailto:info@xmerch.ru">info@xmerch.ru</a></div>
+        <div class="phone">+7 (916) 411 44 44</div>
+    </div>
+</header>
+<!-- 1st section "Promo" -->
+<section class="promo" id="promo" >
+    <div class="phrase_btns">
+        <div class="promo_phrase">
+            <!--XMERCH - комплексный мерчендайзинг каждого магазина под ключ-->
+            <!--Здесь должна быть работающая промо фраза-->
+            расширенный мерчендайзинг торговых точек
+        </div>
+        <div class="promo_btns">
+            <a href="#advantages"><%= button_tag("Что такое Xmerch?", type: "button", class: "promo_btn what_btn") %></a>
+            <a href="#callback"><%= button_tag("Заказать звонок", type: "button", class: "promo_btn callback_btn") %></a>
+        </div>
+    </div>
+</section>
+<!-- 2nd section "Advantages" -->
+<section class="advantages" id="advantages">
+    <div class="wrapper">
+        <h2>Xmerch решает ваши проблемы</h2>
+        <ul>
+            <li>Вам не нужно нанимать мерчендайзера в штат</li>
+            <li>Быстрый старт</li>
+            <li>Привлечение специалиста под конкретную задачу</li>
+            <li>Выполнение плана продаж</li>
+            <li>Фиксированная стоимость на размещение дополнительной выкладки</li>
+            <li>Вы платите за результат, а не за процесс</li>
+        </ul>
+        <div class="promo_phrase">
+            Мы сами договоримся о паллетной, торцевой, расширенной выкладках,
+            согласуем план продаж и установим рекламное оборудование
+        </div>
+    </div>
+</section>
+<!-- 3rd section "Uniqueness" -->
+<section class="uniqueness" id="uniqueness">
+    <h2>Уникальность сервиса Xmerch</h2>
+    <div class="uniq_collection">
+        <div class="uniq_item">
+            <%= image_tag("icons/icon_1.svg", :alt => "icon_1", :class => "icon", :id => "icon_1") %>
+            <p>Оплата по факту выполненных работ</p>
+        </div>
+        <div class="uniq_item">
+            <%= image_tag("icons/icon_2.svg", :alt => "icon_2", :class => "icon", :id => "icon_2") %>
+            <p>Время выполнения заказа&nbsp;от&nbsp;48&nbsp;часов</p>
+        </div>
+        <div class="uniq_item">
+            <%= image_tag("icons/icon_3.svg", :alt => "icon_3", :class => "icon", :id => "icon_3") %>
+            <p>Быстрый безналичный&nbsp;расчет</p>
+        </div>
+        <div class="uniq_item">
+            <%= image_tag("icons/icon_4.svg", :alt => "icon_4", :class => "icon", :id => "icon_4") %>
+            <p>Подключение на&nbsp;ограниченное время</p>
+        </div>
+        <div class="uniq_item">
+            <%= image_tag("icons/icon_5.svg", :alt => "icon_5", :class => "icon", :id => "icon_5") %>
+            <p>Не нужно контролировать общение только с&nbsp;менеджером Xmerch</p>
+        </div>
+        <div class="uniq_item">
+            <%= image_tag("icons/icon_6.svg", :alt => "icon_6", :class => "icon", :id => "icon_6") %>
+            <p>Работа с неограниченным количеством торговых&nbsp;точек</p>
+        </div>
+        <div class="uniq_item">
+            <%= image_tag("icons/icon_7.svg", :alt => "icon_7", :class => "icon", :id => "icon_7") %>
+            <p>Работа на территории Москвы и МО</p>
+        </div>
+        <div class="uniq_item">
+            <%= image_tag("icons/icon_8.svg", :alt => "icon_8", :class => "icon", :id => "icon_8") %>
+            <p>Наши агенты возьмутся за нужные задачи любой&nbsp;сложности</p>
+        </div>
+    </div>
+</section>
+<!-- 4th section "Workflow" -->
+<section class="workflow" id="workflow" >
+    <div class="wrapper">
+        <h2>Как работает Xmerch?</h2>
+        <div class="wf_collection">
+            <!--absolute positioning vertical arrows-->
+            <div class="arrows" id="vertical_arrows"></div>
+            
+            <div class="wf_item">
+            <%= image_tag("icons/pic_1.svg", :alt => "pic_1", :class => "pic", :id => "pic_1") %>
+            <p>Вы обращаетесь в&nbsp;XMERCH</p>
+            </div>
+            <div class="wf_item arrows" id="arrows_1"></div>
+            <div class="wf_item">
+                <%= image_tag("icons/pic_2.svg", :alt => "pic_2", :class => "pic", :id => "pic_2") %>
+                <p>Менеджер&nbsp;анализирует заказ и вводит данные в систему</p>
+            </div>
+            <div class="wf_item arrows" id="arrows_2"></div>
+            <div class="wf_item">
+                <%= image_tag("icons/pic_3.svg", :alt => "pic_3", :class => "pic", :id => "pic_3") %>
+                <p>Система&nbsp;распределяет задачи между исполнителями</p>
+            </div>
+            <div class="wf_item">
+                <%= image_tag("icons/pic_6.svg", :alt => "pic_6", :class => "pic", :id => "pic_6") %>
+                <p>Вы получаете отличный&nbsp;результат в&nbsp;короткие сроки</p>
+            </div>
+            <div class="wf_item arrows" id="arrows_3"></div>
+            <div class="wf_item">
+                <%= image_tag("icons/pic_5.svg", :alt => "pic_5", :class => "pic", :id => "pic_5") %>
+                <p>Служба проверяет качество работ</p>
+            </div>
+            <div class="wf_item arrows" id="arrows_4"></div>
+            <div class="wf_item">
+                <%= image_tag("icons/pic_4.svg", :alt => "pic_4", :class => "pic", :id => "pic_4") %>
+                <p>Агенты выполняют<br>работу</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 5th block "Callback" -->
+<section class="callback" id="callback">
+    <div class="wrapper">
+        <div class="promo_phrase">Связаться с&nbsp;&nbsp;нами просто!</div>
+        <div class="form">
+            <input type="text" name="name" placeholder="Имя" 
+                onfocus="this.placeholder = ''" 
+                onblur="this.placeholder = 'Имя'">
+            <input type="tel" name="phone" placeholder="Телефон" 
+                onfocus="this.placeholder = ''" 
+                onblur="this.placeholder = 'Телефон'">
+            <input type="email" name="email" placeholder="E-mail" 
+                onfocus="this.placeholder = ''" 
+                onblur="this.placeholder = 'E-mail'">
+            <input type="submit" value="Связаться">
+        </div>
+    </div>
+</section>
+<!-- footer -->
+<footer>
+    <div class="wrapper">
+        <%= image_tag("logo_bw.svg", :alt => "logo_black_and_white", :class => "logo") %>
+    
+        <div class="footer_block">
+            <div class="phone">+7 (916) 411 44 44</div>
+            <div class="email"><a href="mailto:info@xmerch.ru">info@xmerch.ru</a></div>
+            <div class="copyright">Xmerch &copy; 2015</div>
+        </div>
+        
+        <div class="footer_block">
+            <ul>
+                <li><a href="#">Личный кабинет</a></li>
+                <li><a href="#advantages">Что такое Xmerch?</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
