@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  required: false
+  reward: 1
+  complete: false
+  photo_required: false
+  order_id: 
+
+two:
+  required: false
+  reward: 1
+  complete: false
+  photo_required: false
+  order_id: 
