@@ -247,6 +247,9 @@ header {
             #icon_5 {
                 width: 93px;
                 height: 95px;
+                & + p {
+                    bottom: 21px;
+                }
             }
             #icon_6 {
                 margin-top: 8px;
@@ -257,7 +260,7 @@ header {
                 width: 114px;
                 height: 93px;
                 & + p {
-                    bottom: 19px;
+                    bottom: 21px;
                 }
             }
             #icon_8 {
