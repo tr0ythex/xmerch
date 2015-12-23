@@ -107,7 +107,7 @@ header {
 .promo {
     height: 560px;
     min-width: 940px;
-    background: url(promo_bg.jpg) fixed;
+    background: asset_url('promo_bg.jpg') fixed;
     background-size: 100% 100%;
     position: relative;
     .phrase_btns {
