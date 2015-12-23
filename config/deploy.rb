@@ -23,7 +23,7 @@ set :deploy_to, '~/xmerch'
 # set :pty, true
 
 # Default value for :linked_files is []
-set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')
+set :linked_files, fetch(:linked_files, []).push('config/secrets.yml')
 
 # Default value for linked_dirs is []
 # set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system')
@@ -48,7 +48,7 @@ namespace :deploy do
 end
 
 set :rbenv_ruby, '2.2.4'
-set :rbenv_custom_path, '/home/deployer/.rbenv'
+set :rbenv_custom_path, '~/.rbenv'
 set :rbenv_type, :user
 set :rbenv_prefix, "RBENV_ROOT=#{fetch(:rbenv_path)} RBENV_VERSION=#{fetch(:rbenv_ruby)} #{fetch(:rbenv_path)}/bin/rbenv exec"
 set :rbenv_map_bins, %w{rake gem bundle ruby rails}

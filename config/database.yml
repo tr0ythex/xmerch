@@ -25,5 +25,5 @@ production:
   encoding: unicode
   database: xmerch
   pool: 5
-  username: deployer
-  password: yuRt7800bbN
+  username: xmerch
+  password:
