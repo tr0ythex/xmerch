@@ -159,7 +159,7 @@ header {
     }
     li {
         list-style: none;
-        background: url('check.svg') no-repeat;
+        background: asset_url('check.svg') no-repeat;
         background-size: 18px 13px;
         background-position: left center;
         padding-left: 32px;
@@ -176,7 +176,7 @@ header {
         font-size: 1.27em;
         line-height: 1.5em;
         color: $header_blue;
-        background: url('yellow_shape.svg') no-repeat;
+        background: asset_url('yellow_shape.svg') no-repeat;
     }
 }
 // section "Uniqueness"
@@ -355,7 +355,7 @@ header {
         }
     }
     .arrows {
-        background: url('icons/arrows.svg') no-repeat 50% 50%;
+        background: asset_url('icons/arrows.svg') no-repeat 50% 50%;
         background-size: 88px 17px;
         width: 120px;
     }
