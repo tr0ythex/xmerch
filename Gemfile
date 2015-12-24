@@ -34,11 +34,16 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'responders', '~> 2.0'
 
-gem 'ffaker'
-
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'shoulda-matchers'
+end
+
+group :test do
+  gem "rspec-rails"
+  gem "factory_girl_rails"
+  gem 'ffaker'
 end
 
 group :development do
