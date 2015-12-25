@@ -121,12 +121,22 @@
     <div class="wrapper">
         <div class="promo_phrase">Связаться с&nbsp;&nbsp;нами просто!</div>
         <%= form_tag send_email_path, method: :post, class: 'form' do %>
-          <%= text_field_tag 'name', nil, placeholder: 'Имя', 
-              :onfocus => "this.placeholder=''", :onblur => "this.placeholder='Имя'" %>
-          <%= text_field_tag 'phone', nil, placeholder: 'Телефон',
-              :onfocus => "this.placeholder=''", :onblur => "this.placeholder='Телефон'"%>
-          <%= text_field_tag 'email', nil, placeholder: 'E-mail',
-              :onfocus => "this.placeholder=''", :onblur => "this.placeholder='E-mail'"%>
+          <%= text_field_tag 'name', nil, placeholder: 'Имя',
+              :required => true,
+              :onfocus => "this.placeholder=''", 
+              :onblur => "this.placeholder='Имя'" %>
+          <%= phone_field_tag 'phone', nil, placeholder: 'Телефон', 
+              title: '8-9XX-XXX-XX-XX',
+              :required => true,
+              :pattern => '^8-9\d{2}-\d{3}-\d{2}-\d{2}$',
+              :onfocus => "this.placeholder=''", 
+              :onblur => "this.placeholder='Телефон'"%>
+          <%= email_field_tag 'email', nil, placeholder: 'E-mail',
+              title: 'user@example.com',
+              :required => true,
+              :pattern => '^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$',
+              :onfocus => "this.placeholder=''", 
+              :onblur => "this.placeholder='E-mail'"%>
           <%= submit_tag 'Связаться' %>
         <% end %>
     </div>

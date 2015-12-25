@@ -402,6 +402,9 @@ header {
             color: white;
             margin-top: 29px;
             outline: none;
+            &:focus:invalid:after {
+                content: 'asdf';
+            }
             &[type="submit"] {
                 background-color: $yellow;
                 width: 100%;
