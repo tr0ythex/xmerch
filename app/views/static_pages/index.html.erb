@@ -120,25 +120,15 @@
 <section class="callback" id="callback">
     <div class="wrapper">
         <div class="promo_phrase">Связаться с&nbsp;&nbsp;нами просто!</div>
-        <!--<div class="form">
-            <input type="text" name="name" placeholder="Имя" 
-                onfocus="this.placeholder = ''" 
-                onblur="this.placeholder = 'Имя'">
-            <input type="tel" name="phone" placeholder="Телефон" 
-                onfocus="this.placeholder = ''" 
-                onblur="this.placeholder = 'Телефон'">
-            <input type="email" name="email" placeholder="E-mail" 
-                onfocus="this.placeholder = ''" 
-                onblur="this.placeholder = 'E-mail'">
-            <input type="submit" value="Связаться">
-        </div>-->
-        <%= form_tag send_email_path, method: :post do %>
-          <%= text_field_tag 'name' %>
-          <%= text_field_tag 'phone' %>
-          <%= text_field_tag 'email' %>
-          <%= submit_tag 'Call Action' %>
+        <%= form_tag send_email_path, method: :post, class: 'form' do %>
+          <%= text_field_tag 'name', nil, placeholder: 'Имя', 
+              :onfocus => "this.placeholder=''", :onblur => "this.placeholder='Имя'" %>
+          <%= text_field_tag 'phone', nil, placeholder: 'Телефон',
+              :onfocus => "this.placeholder=''", :onblur => "this.placeholder='Телефон'"%>
+          <%= text_field_tag 'email', nil, placeholder: 'E-mail',
+              :onfocus => "this.placeholder=''", :onblur => "this.placeholder='E-mail'"%>
+          <%= submit_tag 'Связаться' %>
         <% end %>
-
     </div>
 </section>
 <!-- footer -->

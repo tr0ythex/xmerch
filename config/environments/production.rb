@@ -78,21 +78,9 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
   config.secret_key_base = ENV["SECRET_KEY_BASE"]
   config.assets.compile = true
-  config.assets.precompile =  ['*.js', '*.css', '*.css.erb'] 
-  # config.serve_static_assets = true
+  config.assets.precompile =  ['*.js', '*.css', '*.css.erb']
   
-  # config.action_mailer.delivery_method = :smtp
-
-  # config.action_mailer.smtp_settings = {
-  #   address: "smtp.yandex.ru",
-  #   port: 465,
-  #   domain: 'xmerch.ru',
-  #   authentication: "plain",
-  #   enable_starttls_auto: true,
-  #   user_name: 'noreply@xmerch.ru',
-  #   password: 'password'
-  # }
-  
+  # Mail settings
   config.action_mailer.default_url_options = {:host => 'xmerch.ru', :from => 'noreply@xmerch.ru'}
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {

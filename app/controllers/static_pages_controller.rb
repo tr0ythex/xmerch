@@ -12,8 +12,7 @@ class StaticPagesController < ApplicationController
   #   end
   # end
   def send_email
-    # @article = Article.find(params[:id])
-    if Notifier.send_email.deliver
+    if Notifier.send_email(params[:name], params[:phone], params[:email]).deliver
       flash[:notice] = 'Thank you for your message. We will contact you soon!'
       redirect_to root_path
     else
