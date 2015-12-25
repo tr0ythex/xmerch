@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root 'static_pages#index'
+  post 'send_email', to: 'static_pages#send_email', as: 'send_email'
   
   namespace :api, constraints: { format: 'json' } do
     namespace :v1 do

@@ -120,7 +120,7 @@
 <section class="callback" id="callback">
     <div class="wrapper">
         <div class="promo_phrase">Связаться с&nbsp;&nbsp;нами просто!</div>
-        <div class="form">
+        <!--<div class="form">
             <input type="text" name="name" placeholder="Имя" 
                 onfocus="this.placeholder = ''" 
                 onblur="this.placeholder = 'Имя'">
@@ -131,7 +131,14 @@
                 onfocus="this.placeholder = ''" 
                 onblur="this.placeholder = 'E-mail'">
             <input type="submit" value="Связаться">
-        </div>
+        </div>-->
+        <%= form_tag send_email_path, method: :post do %>
+          <%= text_field_tag 'name' %>
+          <%= text_field_tag 'phone' %>
+          <%= text_field_tag 'email' %>
+          <%= submit_tag 'Call Action' %>
+        <% end %>
+
     </div>
 </section>
 <!-- footer -->

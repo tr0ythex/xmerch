@@ -9,7 +9,9 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto:500,300,100' rel='stylesheet' type='text/css'>
 </head>
 <body>
-
+  <% flash.each do |name, msg| %>
+    <%= content_tag :div, msg, class: name %>
+  <% end %>
 <%= yield %>
 
 </body>
