@@ -74,6 +74,15 @@ h2 {
     color: white;
 }
 
+.notice {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: white;
+    color: black;
+}
+
 // header
 header {
     // font-size: 1em;
