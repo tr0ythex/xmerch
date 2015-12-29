@@ -78,8 +78,8 @@ GEM
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     i18n (0.7.0)
-    jbuilder (2.3.2)
-      activesupport (>= 3.0.0, < 5)
+    jbuilder (2.4.0)
+      activesupport (>= 3.0.0, < 5.1)
       multi_json (~> 1.2)
     jquery-rails (4.0.5)
       rails-dom-testing (~> 1.0)
@@ -90,9 +90,6 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
-    mail_form (1.5.1)
-      actionmailer (>= 3.2, < 5)
-      activemodel (>= 3.2, < 5)
     mime-types (2.99)
     mini_portile2 (2.0.0)
     minitest (5.8.3)
@@ -164,9 +161,6 @@ GEM
       rdoc (~> 4.0)
     shoulda-matchers (3.0.1)
       activesupport (>= 4.0.0)
-    simple_form (3.2.1)
-      actionpack (> 4, < 5.1)
-      activemodel (> 4, < 5.1)
     spring (1.6.1)
     sprockets (3.5.2)
       concurrent-ruby (~> 1.0)
@@ -211,7 +205,6 @@ DEPENDENCIES
   ffaker
   jbuilder (~> 2.0)
   jquery-rails
-  mail_form
   pg
   rails (= 4.2.4)
   responders (~> 2.0)
@@ -219,7 +212,6 @@ DEPENDENCIES
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   shoulda-matchers
-  simple_form
   spring
   sqlite3
   turbolinks
