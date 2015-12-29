@@ -120,7 +120,7 @@
 <section class="callback" id="callback">
     <div class="wrapper">
         <div class="promo_phrase">Связаться с&nbsp;&nbsp;нами просто!</div>
-        <%= form_tag send_email_path, method: :post, class: 'form' do %>
+        <%= form_tag send_email_path, method: :post, remote: true, class: 'form', id: 'callback_form' do %>
           <%= text_field_tag 'name', nil, placeholder: 'Имя',
               :required => true,
               :onfocus => "this.placeholder=''", 
@@ -139,6 +139,16 @@
               :onblur => "this.placeholder='E-mail'"%>
           <%= submit_tag 'Связаться' %>
         <% end %>
+        <div id="form_success">
+            <p>Спасибо!</p>
+            <p>Ваши контакты отправлены</p>
+            <p>Мы обязательно свяжемся с Вами в скором времени</p>
+            <p>По всем вопросам пишите на <b>info@xmerch.ru</b></p>
+        </div>
+        <div id="form_error">
+            <p>Произошла ошибка при отправке сообщения</p>
+            <p>Повторите попытку позже</p>
+        </div>
     </div>
 </section>
 <!-- footer -->
