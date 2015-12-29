@@ -129,7 +129,7 @@
               title: '+7 (XXX) XXX-XX-XX',
               :required => true,
               :pattern => '^\+7\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}$',
-              :onfocus => "this.placeholder=''", 
+              :onfocus => "this.placeholder='+7'", 
               :onblur => "this.placeholder='Телефон'"%>
           <%= email_field_tag 'email', nil, placeholder: 'E-mail',
               title: 'user@example.com',
