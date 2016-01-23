@@ -1,7 +1,7 @@
 class Api::V1::UsersController < ApplicationController
   def index
     @users = User.all
-    render json: @users
+    render json: @users, only: [:username, :email, :sex]
   end
     
   def show
@@ -12,7 +12,7 @@ class Api::V1::UsersController < ApplicationController
   def create
     @user = User.create(user_params)
     if @user.save
-      head :created
+      render json: { auth_token: @user.auth_token }, status: :created
     else
       render json: { errors: @user.errors }, status: :unprocessable_entity
     end
