@@ -12,4 +12,8 @@ class ApplicationController < ActionController::Base
   def authenticate_with_token!
     head :unauthorized unless current_user.present?
   end
+  
+  def user_json_params
+    [:username, :auth_token]
+  end
 end
