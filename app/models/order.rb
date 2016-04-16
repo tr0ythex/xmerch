@@ -7,4 +7,6 @@ class Order < ActiveRecord::Base
   
   has_many :tasks
   has_many :order_photos
+  
+  accepts_nested_attributes_for :order_photos
 end

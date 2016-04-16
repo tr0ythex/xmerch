@@ -4,7 +4,7 @@ class Api::V1::SessionsController < ApplicationController
   def create
     user = User.find_by(username: session_params[:username])
     if user && user.authenticate(session_params[:password])
-      render json: { auth_token: user.auth_token }, status: :ok
+      render json: user, only: user_json_params, status: :ok
     else
       render json: { errors: "Invalid login or password" }, status: :unprocessable_entity
     end

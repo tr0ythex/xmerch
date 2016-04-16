@@ -14,6 +14,6 @@ class ApplicationController < ActionController::Base
   end
   
   def user_json_params
-    [:username, :auth_token]
+    [:username, :auth_token, :balance, :withdraw_requested]
   end
 end

@@ -8,6 +8,11 @@ Rails.application.routes.draw do
       get 'users/me/orders(/:limit)(/:offset)', to: 'users#user_orders'
       
       resource :orders, only: [:index]
+      
+      resources :orders, only: [:update] do
+        resources :order_photos
+      end
+      
       get 'orders(/:limit)(/:offset)', to: 'orders#index'
       # do
       #   match '(/:limit)(/:offset)', to: 'orders#index', via: :get

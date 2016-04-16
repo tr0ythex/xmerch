@@ -59,7 +59,7 @@
 #     auth_methods: %w(publickey password)
 #     # password: 'please use keys'
 #   }
-server '51.255.107.15', user: 'xmerch', roles: %w{web app db}
+server '51.255.107.2', user: 'xmerch', roles: %w{web app db}
 
 set :ssh_options, {
   keys: '~/.ssh/id_rsa'
