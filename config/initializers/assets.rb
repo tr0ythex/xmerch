@@ -8,4 +8,6 @@ Rails.application.config.assets.version = '1.0'
 
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
-Rails.application.config.assets.precompile += %w( logo.svg )
+Rails.application.config.assets.precompile += %w( logo.svg icons/icon_1.svg 
+  icons/icon_2.svg icons/icon_3.svg icons/icon_4.svg icons/icon_5.svg
+  icons/icon_6.svg icons/icon_7.svg icons/icon_8.svg)
